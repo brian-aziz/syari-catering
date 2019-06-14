@@ -133,7 +133,22 @@
   
   
   
-  
+
+  <style>
+    #menu .container| {
+      text-align: center;
+      background: red;
+    }
+    #menuCards .card {
+      text-align: center;
+      width: 20%;
+      height: 300px;
+      margin: 0 10px 10px 10px;
+    }
+    #menuCards .card img {
+      width: 100%;
+    }
+  </style>
     <!-- MENU -->
     <section class="bg-light page-section" id="menu">
       <div class="container">
@@ -141,10 +156,41 @@
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Menu</h2>
             <h3 class="section-subheading text-muted"> Ganti setiap hari, update setiap bulan </h3>
+          </div>  
+        </div>
+        <div class="row" id="menuCards">
+          <div class="card">
+            <div class="card-body">
+                <img src="{{asset('assets/client/img/deals/1.png')}}" alt="Banyak Variasi Menu">
+            </div>
+            <div class="card-footer">
+              Sayur Sop
+            </div>
           </div>
-        
-   
-  
+          <div class="card">
+              <div class="card-body">
+                  <img src="{{asset('assets/client/img/deals/1.png')}}" alt="Banyak Variasi Menu">
+              </div>
+              <div class="card-footer">
+                Sayur Sop
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <img src="{{asset('assets/client/img/deals/1.png')}}" alt="Banyak Variasi Menu">
+                </div>
+                <div class="card-footer">
+                  Sayur Sop
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <img src="{{asset('assets/client/img/deals/1.png')}}" alt="Banyak Variasi Menu">
+                </div>
+                <div class="card-footer">
+                  Sayur Sop
+                </div>
+            </div>
         </div> 
       </div>
     </section>
