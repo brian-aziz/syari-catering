@@ -15,7 +15,7 @@
 
 
   <!-- Custom styles for this template -->  
-  <link href="{{asset('client/assets/css/coba.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/client/css/coba.css')}}" rel="stylesheet">
 
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -24,17 +24,17 @@
     <title>Catering by SyariHub</title>
   
     <!-- Bootstrap core CSS -->
-    <link href="{{asset('client/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/client/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
   
     <!-- Custom fonts for this template -->
-    <link href="{{asset('client/assets/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('assets/client/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
   
     <!-- Custom styles for this template -->
-    <link href="{{asset('client/assets/css/agency.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/client/css/agency.min.css')}}" rel="stylesheet">
 
 
 </head>
@@ -43,7 +43,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-          <a class="navbar-brand" href="#page-top"><img alt="logo" src="{{asset('client/assets/img/logoc.svg')}}" class="img-responsive" style="width:40px;"/></a>
+          <a class="navbar-brand" href="#page-top"><img alt="logo" src="{{asset('assets/client/img/logoc.svg')}}" class="img-responsive" style="width:40px;"/></a>
           <a class="navbar-brand js-scroll-trigger" href="#">Syari Catering</a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
@@ -66,7 +66,7 @@
   
               {{-- dropdown menu --}}
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Lainnya
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background:#212529;">
@@ -74,8 +74,8 @@
                   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';" href="#">Pembayaran</a>
                   <a class="dropdown-item" href="" style="color: white; background:#212529; 
                   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';" href="#">Cek Pesanan</a>
-                  <a class="dropdown-item" href="" style="color: white; background:#212529; 
-                  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';" href="#">Menjadi Mitra</a>
+                  <a class="dropdown-item" href="{{ route('register') }}" style="color: white; background:#212529; 
+                  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';" >Menjadi Mitra</a>
               </div>
               </li>
             
@@ -176,18 +176,18 @@
                   <div class="carousel-inner">
                     
                     <div class="carousel-item active">
-                      <img src="{{asset('client/assets/img/deals/1.png')}}" class="d-block w-100" alt="Banyak Variasi Menu">
+                      <img src="{{asset('assets/client/img/deals/1.png')}}" class="d-block w-100" alt="Banyak Variasi Menu">
                     </div>
                   
                    
                     <div class="carousel-item">
-                      <img src="{{asset('client/assets/img/deals/2.png')}}" class="d-block w-100" alt="Gratis Ongkir">
+                      <img src="{{asset('assets/client/img/deals/2.png')}}" class="d-block w-100" alt="Gratis Ongkir">
                     </div>
                   
   
                   
                     <div class="carousel-item">
-                      <img src="{{asset('client/assets/img/deals/3.png')}}" class="d-block w-100" alt="Berbagi">
+                      <img src="{{asset('assets/client/img/deals/3.png')}}" class="d-block w-100" alt="Berbagi">
                     </div>
                   
                   </div>
@@ -261,18 +261,18 @@
    @include('templates.partials._footer')
 
   <!-- Bootstrap core JavaScript -->
-  <script src="{{asset('client/assets/vendor/jquery/jquery.min.js')}}"></script>
-  <script src="{{asset('client/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('assets/client/vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{asset('assets/client/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
   <!-- Plugin JavaScript -->
-  <script src="{{asset('client/assets/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+  <script src="{{asset('assets/client/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 
   <!-- Contact form JavaScript -->
-  <script src="{{asset('client/assets/js/jqBootstrapValidation.js')}}"></script>
-  <script src="{{asset('client/assets/js/contact_me.js')}}"></script>
+  <script src="{{asset('assets/client/js/jqBootstrapValidation.js')}}"></script>
+  <script src="{{asset('assets/client/js/contact_me.js')}}"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="{{asset('client/assets/js/agency.min.js')}}"></script>
+  <script src="{{asset('assets/client/js/agency.min.js')}}"></script>
   
 </body>
 

@@ -35,14 +35,16 @@ Route::prefix('kitchen_crew')->middleware('auth', 'role:KitchenCrew')->name('kit
     Route::resource('packetrule', 'PacketRuleController');
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+Route::get('register', '\App\Http\Controllers\Auth\RegisterController@showRegistrationForm')->name('register');
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/', function () {
+    return view('homepage');
+});
 
 Route::get('/detail', function () {
     return view('templates.default');
